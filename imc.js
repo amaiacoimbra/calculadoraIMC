@@ -6,3 +6,4 @@ const peso = document.getElementById('peso')
 const calcular = document.getElementById('calcular')
 const resultado = document.getElementById('resultado')
 
+calcular.addEventListener('click', imc)
