@@ -13,7 +13,14 @@ function imc () {
     if (nome.value !== '' && altura !== '' && peso !== '') {
 
         const valorIMC = (peso / (altura * altura)).toFixed(1)
-        resultado.textContent = valorIMC
+
+        let classificacao = ''
+
+        if (valorIMC < 18.5) {
+            classificacao = 'abaixo do peso.'
+        }
+
+        resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificacao}!`
        
     } else {
         resultado.textContent = 'Preencha todos os campos!!!'
