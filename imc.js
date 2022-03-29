@@ -18,6 +18,8 @@ function imc () {
 
         if (valorIMC < 18.5) {
             classificacao = 'abaixo do peso.'
+        } else if (valorIMC < 25) {
+            classificacao = 'com peso ideal, Parabéns'
         }
 
         resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificacao}!`
