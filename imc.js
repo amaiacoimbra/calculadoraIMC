@@ -1,4 +1,4 @@
-// 11:30 https://www.youtube.com/watch?v=RacwEvoTz_Y&t=215s
+// 22:07 https://www.youtube.com/watch?v=RacwEvoTz_Y&t=215s
 
 
 const calcular = document.getElementById('calcular')
@@ -17,7 +17,7 @@ function imc () {
         let classificacao = ''
 
         if (valorIMC < 18.5) {
-            classificacao = 'abaixo do peso'
+            classificacao = 'abaixo do peso, cuidado'
         } else if (valorIMC < 25) {
             classificacao = 'com peso ideal, Parabéns'
         } else if (valorIMC < 30) {
