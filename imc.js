@@ -10,8 +10,10 @@ function imc () {
     const peso = document.getElementById('peso').value
     const resultado = document.getElementById('resultado')
 
-    if (nome.value !== '') {
+    if (nome.value !== '' && altura !== '' && peso !== '') {
         alert ('valor preenchido!')
+    } else {
+        alert('Preencha todos os campos!!!')
     }
 
 }
